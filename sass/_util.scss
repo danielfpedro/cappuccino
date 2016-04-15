@@ -1,0 +1,15 @@
+@mixin border-radius($size) {
+  -webkit-border-radius:	$size; 
+  -moz-border-radius:		$size; 
+  border-radius:			$size;
+}
+@mixin border-top-left-radius($size) {
+  -webkit-border-top-left-radius:	$size!important; 
+  -moz-border-top-left-radius:		$size!important; 
+  border-top-left-radius:			$size!important;
+}
+@mixin border-radius-bottom-left($size) {
+  -webkit-border-radius-bottom-left:	$size; 
+  -moz-border-radius-bottom-left:		$size; 
+  border-radius-bottom-left:			$size;
+}

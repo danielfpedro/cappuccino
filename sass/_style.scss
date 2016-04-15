@@ -1,0 +1,100 @@
+html, body {
+	height: 100%;
+}
+body{
+	min-height: 100%;
+}
+
+.padding {
+	padding: $padding;
+}
+.padding-left {
+	padding-left: $padding;
+}
+.padding-top {
+	padding-top: $padding;
+}
+.padding-right {
+	padding-right: $padding;
+}
+.padding-left {
+	padding-left: $padding;
+}
+.cap-container	{
+	height: 100%;
+	@include flexbox();
+	@include flex-direction(column);
+}
+
+/*HEADER*/
+.cap-header {
+	height: $header-height;
+	background-color: #FFF;
+	@include flexbox();
+	@include flex-direction(row);
+	@include align-items(center);
+	border-bottom: 1px solid darken(#FFF, 10%);
+	box-shadow: $box-shadow;
+}
+.cap-header-content-left, .cap-header-content-right{	
+	@include flexbox();
+	@include flex-direction(row);
+	@include align-items(center);
+
+	height: 100%;
+	padding: 0 $padding;
+}
+.cap-header-content-left{
+	@include flex();	
+	/*background-color: green;*/
+}
+.cap-header-content-right{
+	@include flex();	
+	@include justify-content(flex-end);
+	text-align: right;
+	/*background-color: red;*/
+}
+
+.cap-btn-profile-header:focus{
+	outline: none!important;
+}
+.cap-btn-profile-header{
+	padding: 0;
+	@include border-radius(40px);
+	border: none;
+	background-color: darken(#FFF, 5%);
+	padding-right: 10px;
+	color: lighten(#000, 40%);
+}
+.cap-btn-profile-header > img {
+	width: 35px;
+}
+
+.cap-dropdown-profile-header ul{
+	margin-top: 8px;
+}
+
+.cap-dropdown-profile-header ul > li > a > span{
+	margin-right: 10px;
+}
+
+.cap-menu{
+	@include flex(0 1 auto);
+	width: 250px;
+	overflow: auto;
+}
+
+.cap-content {
+	@include flex(1);
+	background-color: #F1F2F7;
+}
+
+.cap-content-container {
+	height: 100%;
+	@include flexbox();
+	@include flex-direction(row);	
+}
+.panel{
+	border: none;
+ 	box-shadow: none;
+}

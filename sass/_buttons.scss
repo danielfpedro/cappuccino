@@ -1,0 +1,11 @@
+.cap-btn-circle{
+	$height: 30px;
+	height: $height;
+	width: $height;
+
+	text-align: center;
+	padding: 3px 0;
+	font-size: 15px;
+	line-height: 1.42;
+	@include border-radius($height / 2);
+}
