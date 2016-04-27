@@ -3,6 +3,11 @@ html, body {
 }
 body{
 	min-height: 100%;
+	font-family: 'Lato', sans-serif!important;
+}
+
+a {
+	color: $link-color;
 }
 
 .padding {
@@ -33,9 +38,26 @@ body{
 	@include flexbox();
 	@include flex-direction(row);
 	@include align-items(center);
-	border-bottom: 1px solid darken(#FFF, 10%);
+	border-bottom: 1px solid $border-color;
 	box-shadow: $box-shadow;
 }
+.cap-brand {
+	width: ($side-menu-width - $padding);
+	margin-right: 10px;
+}
+.cap-brand > a, .cap-brand > a:hover, .cap-brand > a:focus{
+	font-size: 20px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+}
+.cap-brand > a{
+	color: lighten(#000, 20%);
+}
+/*.cap-brand > a:{
+	font-size: 20px;
+	font-weight: bold;
+}*/
 .cap-header-content-left, .cap-header-content-right{	
 	@include flexbox();
 	@include flex-direction(row);
@@ -80,13 +102,41 @@ body{
 
 .cap-menu{
 	@include flex(0 1 auto);
-	width: 250px;
+	width: $side-menu-width;
 	overflow: auto;
+	background-color: #FAFAFA;
+	border-right: 1px solid $border-color;
 }
 
+.cap-menu > ul.nav {
+	padding: 15px;
+}
+.cap-menu > ul.nav > li.cap-menu-title{
+	padding-left: 20px;
+	padding-bottom: 10px;
+	font-size: 12px;
+	color: lighten($link-color, 40%);
+}
+.cap-menu > ul.nav > li > a {
+	font-size: 16px;
+	color: lighten($link-color, 40%);
+}
+.cap-menu > ul.nav > li.active > a, .cap-menu > ul.nav > li.active > a:focus, .cap-menu > ul.nav > li.active > a:hover{
+	background-color: lighten(#000, 90%);
+	color: $link-color;
+}
+.cap-menu > ul.nav > li:active > a {
+	color: $link-color;
+}
+.cap-menu > ul.nav > li > a > span{
+	padding-right: 5px;
+	font-size: 14px;
+}
 .cap-content {
 	@include flex(1);
-	background-color: #F1F2F7;
+}
+.cap-content-title{
+	margin: 0 0 10px 0;
 }
 
 .cap-content-container {
@@ -97,4 +147,18 @@ body{
 .panel{
 	border: none;
  	box-shadow: none;
+ 	/*box-shadow: $box-shadow;*/
+ 	border: 1px solid $border-color;
+}
+.panel-heading {
+	/*font-weight: bold;*/
+	font-size: 12px;
+	color: lighten(#000, 40%)!important;
+}
+.cap-search {
+	margin: 20px 0;
+	padding: 20px 0;
+	border: 1px solid $border-color;
+	border-left: none;
+	border-right: none;
 }

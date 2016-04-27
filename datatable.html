@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Dashboard</title>
+        <title>Datatable</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -78,18 +78,13 @@
                             Opções de UI
                         </li>
                         <li class="active">
-                            <a href="index.html">
-                                <span class="fa fa-hashtag"></span> Dashboard
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="datatable.html">
-                                <span class="fa fa-table"></span> Datatable
+                            <a href="">
+                                <span class="glyphicon glyphicon-asterisk"></span> Dashboard
                             </a>
                         </li>
                         <li>
-                            <a href="form.html">
-                                <span class="fa fa-square-o"></span> Form
+                            <a href="">
+                                <span class="glyphicon glyphicon-tasks"></span> Form
                             </a>
                         </li>
                     </ul>
@@ -120,47 +115,36 @@
                     </div>
 
                     <div class="panel panel-default">
-                        <div class="panel-heading">Form components</div>
-                        <div class="panel-body">
-                            <form action="" class="form-horizontal">
-                                <div class="form-group has-error">
-                                    <label for="name" class="col-sm-2 control-label">Name</label>
-                                    <div class="col-sm-5">
-                                        <input type="text" class="form-control" id="name">
-                                        <p class="help-block">Name is required</p>
-                                    </div>
-                                </div>
-                                <div class="form-group has-success">
-                                    <label for="login" class="col-sm-2 control-label">Login</label>
-                                    <div class="col-sm-5">
-                                        <input type="text" class="form-control" id="login" value="Shaniquinha">
-                                        <p class="help-block">Login must be unique</p>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email" class="col-sm-2 control-label">E-mail</label>
-                                    <div class="col-sm-5">
-                                        <input type="email" class="form-control" id="email">
-                                    </div>
-                                    <div class="col-sm-5 text-muted">
-                                        <span class="fa fa-warning"></span> You can't change your e-mail after save.
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="password" class="col-sm-2 control-label">Password</label>
-                                    <div class="col-sm-5">
-                                        <input type="password" class="form-control" id="password">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-body text-right">
-                            <button class="btn btn-default btn-sm">Cancel</button>
-                            &nbsp;
-                            <button class="btn btn-info">Save changes</button>
-                        </div>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Nome
+                                    </th>
+                                    <th>
+                                        Email
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Jonas Block
+                                    </td>
+                                    <td>
+                                        jonas@gmail.com
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mascos Palmeiras
+                                    </td>
+                                    <td>
+                                        marcos@gmail.com
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
